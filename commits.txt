@@ -1,0 +1,17 @@
+commit 14293d3fc482e5810a22ad0a45a9ecc278368359
+Author: desa <test@t.com>
+Date:   Wed Jun 5 22:26:50 2019 -0700
+
+    changed .css
+
+commit 1267844c940c04ce9ca559ff11452ae8a9be5c89
+Author: desa <test@t.com>
+Date:   Wed Jun 5 22:25:51 2019 -0700
+
+    step 2 index changed
+
+commit 9cfd300c24a0af6a95a69ac6f53ae09cfd3f360d
+Author: desa <test@t.com>
+Date:   Wed Jun 5 22:22:38 2019 -0700
+
+    starting
