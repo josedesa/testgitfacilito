@@ -1,11 +1,10 @@
 pipeline {
-  agent any
-  stages {
-    stage('Install Dependencies') {
-      steps {
-        slackSend color: '#f7a54a', message: "Build Started - ${NAME} ${BUILD_NUMBER} (<${BUILD_URL}|Open>)"
-
-      }
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "Hello World!"
+            }
+        }
     }
-  }
 }
