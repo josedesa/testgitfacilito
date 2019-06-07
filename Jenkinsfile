@@ -8,7 +8,7 @@ pipeline {
         }
          stage('Create Artifact') {
          steps {
-            sh 'tar -czvf /tmp/frontend-${BUILD_NUMBER}.tar.gz index.html'
+            sh 'dir'
            }
         }
         
