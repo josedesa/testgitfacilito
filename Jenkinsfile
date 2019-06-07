@@ -8,7 +8,7 @@ pipeline {
         }
          stage('Create Artifact') {
          steps {
-            sh 'tar -czvf /tmp/frontend-test.tar.gz dist'
+            sh 'ls'
            }
         }
         
