@@ -12,6 +12,11 @@ pipeline {
 			sh 'tar -czvf frontend-${BUILD_NUMBER}.tar.gz ../testpipe/test.txt'
 		  }
 		}
+	     stage('Deploy') {
+			  steps {
+				sh 'ansible servers -m ping -i inventory.ini'
+				
+			}
     
     }
 }
