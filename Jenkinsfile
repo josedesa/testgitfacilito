@@ -3,18 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Hello World! tet ${GIT_BRANCH}  ,  ,  ${BUILD_NUMBER} ,   ${BUILD_URL}  ,  "
+                echo "Hello World!  "
                 
             }
         }
-        stage('Create Artifact') {
-      steps {
-        sh 'tar -czvf /tmp/frontend-${BUILD_NUMBER}.tar.gz dist'
-      }
-    }
- 
-        
-        
-        
+  
     }
 }
