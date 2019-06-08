@@ -7,7 +7,7 @@ pipeline {
                 
             }
         }
-        stage('Create Artifact') {
+        stage('Create Artifact 2') {
 		  steps {
 			sh 'tar -czvf frontend-${BUILD_NUMBER}.tar.gz ../testpipe'
 		  }
