@@ -7,11 +7,18 @@ pipeline {
                 
             }
         }
-         stage('Create Artifact') {
-         steps {
-            bat 'mkdir testjenkins'
-           }
-        }
+        stage('Create Artifact') {
+      steps {
+        sh 'tar -czvf /tmp/frontend-${BUILD_NUMBER}.tar.gz dist'
+      }
+    }
+        environment {
+    NAME = "frontend/${GIT_BRANCH}"
+    DEPLOY_TARGET = "frontend-${GIT_BRANCH}"
+    DEPLOY_PATH = '/var/www/frontend'
+    PRIVATE_KEY = "/root/.ssh/masonfinance.pem"
+
+  }
         
         
         
