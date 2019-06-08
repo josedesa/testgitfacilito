@@ -17,6 +17,7 @@ pipeline {
 				sh 'ansible servers -m ping -i inventory.ini'
 				
 			}
+	     }
     
     }
 }
